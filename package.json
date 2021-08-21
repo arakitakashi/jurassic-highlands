@@ -1,0 +1,50 @@
+{
+  "name": "portforio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "backend:build": "node app.js",
+    "backend:development": "nodemon app.js",
+    "start": "concurrently --kill-others \"npm run backend:development\" \"npm run frontend:development\"",
+    "frontend:build": "webpack --progress --config webpack.config.build.js",
+    "frontend:development": "webpack serve --progress --config webpack.config.development.js"
+  },
+  "author": "Araki Takashi",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "*",
+    "concurrently": "^6.2.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.30.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "file-loader": "^6.2.0",
+    "glslify-loader": "^2.0.0",
+    "image-minimizer-webpack-plugin": "^2.2.0",
+    "include-media": "^1.4.10",
+    "mini-css-extract-plugin": "^2.0.0",
+    "postcss-loader": "^6.1.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "auto-bind": "^4.0.0",
+    "babylonjs": "^4.2.0",
+    "cannon": "^0.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9",
+    "pug": "^3.0.2"
+  }
+}
