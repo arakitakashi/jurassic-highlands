@@ -1,4 +1,19 @@
 /*! *****************************************************************************
+    Copyright (c) Microsoft Corporation.
+    
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted.
+    
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+    AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+    LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+    OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+    PERFORMANCE OF THIS SOFTWARE.
+    ***************************************************************************** */
+
+/*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -17,7 +32,7 @@ PERFORMANCE OF THIS SOFTWARE.
 
 /*! ./SockJSClient */
 
-/*! ./classes/game */
+/*! ./classes/Game */
 
 /*! ./clients/SockJSClient */
 
@@ -57,7 +72,13 @@ PERFORMANCE OF THIS SOFTWARE.
 
 /*! ansi-regex */
 
+/*! auto-bind */
+
 /*! babylonjs */
+
+/*! babylonjs-loaders */
+
+/*! cannon */
 
 /*! events */
 
@@ -88,7 +109,7 @@ PERFORMANCE OF THIS SOFTWARE.
   \***************************/
 
 /*!*****************************!*\
-  !*** ./app/classes/game.js ***!
+  !*** ./app/classes/Game.js ***!
   \*****************************/
 
 /*!*********************************!*\
@@ -105,6 +126,10 @@ PERFORMANCE OF THIS SOFTWARE.
 
 /*!*****************************************!*\
   !*** ./node_modules/ansi-html/index.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/auto-bind/index.js ***!
   \*****************************************/
 
 /*!*****************************************!*\
@@ -134,6 +159,10 @@ PERFORMANCE OF THIS SOFTWARE.
 /*!********************************************!*\
   !*** ./node_modules/querystring/encode.js ***!
   \********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/cannon/build/cannon.js ***!
+  \*********************************************/
 
 /*!*********************************************!*\
   !*** ./node_modules/webpack/hot/emitter.js ***!
@@ -186,6 +215,10 @@ PERFORMANCE OF THIS SOFTWARE.
 /*!***************************************************************!*\
   !*** ./node_modules/webpack/hot/ sync nonrecursive ^\.\/log$ ***!
   \***************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./node_modules/babylonjs-loaders/babylonjs.loaders.min.js ***!
+  \*****************************************************************/
 
 /*!*******************************************************************!*\
   !*** ./node_modules/webpack-dev-server/client/utils/reloadApp.js ***!

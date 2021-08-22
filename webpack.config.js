@@ -1,11 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+// const TerserPlugin = require('terser-webpack-plugin')
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
@@ -57,9 +57,13 @@ module.exports = {
           ['optipng', { optimizationLevel: 8 }]
         ]
       }
-    }),
+    })
 
-    new CleanWebpackPlugin()
+    // new CleanWebpackPlugin(
+    //   {
+    //     exclude: ['./public/images', './public/models', './public/sounds']
+    //   }
+    // )
   ],
 
   module: {
@@ -103,7 +107,7 @@ module.exports = {
       },
 
       {
-        test: /\.(jpe?g|png|gif|svg|webp)$/i,
+        test: /\.(jpg|jpe?g|png|gif|svg|webp)$/i,
         use: [
           {
             loader: ImageMinimizerPlugin.loader
@@ -123,10 +127,10 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  },
-
-  optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin()]
   }
+
+  // optimization: {
+  //   minimize: true,
+  //   minimizer: [new TerserPlugin()]
+  // }
 }
